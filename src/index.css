@@ -63,17 +63,17 @@ All colors MUST be HSL.
     --gradient-button: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-bright)));
     --gradient-text: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)), hsl(var(--accent-rose)));
 
-    /* Ultra-premium shadows with incredible depth */
-    --shadow-golden: 0 0 40px rgba(255, 215, 0, 0.5), 0 0 80px rgba(255, 215, 0, 0.3), 0 0 120px rgba(255, 215, 0, 0.15);
-    --shadow-glow: 0 0 50px rgba(255, 223, 96, 0.7), 0 0 100px rgba(255, 223, 96, 0.4), 0 0 150px rgba(255, 223, 96, 0.2);
-    --shadow-accent: 0 0 45px rgba(255, 193, 71, 0.5), 0 0 90px rgba(255, 193, 71, 0.3);
-    --shadow-card: 0 25px 60px -15px rgba(255, 215, 0, 0.3), 0 10px 30px -8px rgba(255, 215, 0, 0.25), 0 4px 15px -3px rgba(255, 215, 0, 0.2);
-    --shadow-button: 0 12px 35px 0 rgba(255, 215, 0, 0.5), 0 5px 18px 0 rgba(255, 215, 0, 0.35);
-    --shadow-hover: 0 35px 85px -20px rgba(255, 215, 0, 0.6), 0 18px 50px -12px rgba(255, 193, 71, 0.45), 0 8px 25px -5px rgba(255, 215, 0, 0.35);
-    --shadow-premium: 0 40px 100px -25px rgba(255, 215, 0, 0.5), 0 25px 60px -15px rgba(255, 193, 71, 0.35), 0 12px 30px -8px rgba(218, 165, 32, 0.25);
-    --shadow-glass: 0 30px 70px -15px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 215, 0, 0.08);
-    --shadow-text: 0 4px 12px rgba(255, 215, 0, 0.4);
-    --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    /* Ultra-luxury shadows with crystalline depth */
+    --shadow-crystal: 0 0 60px rgba(255, 215, 0, 0.4), 0 0 120px rgba(255, 215, 0, 0.2), 0 0 200px rgba(255, 215, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    --shadow-velvet: 0 0 80px rgba(255, 223, 96, 0.6), 0 0 160px rgba(255, 223, 96, 0.3), 0 0 240px rgba(255, 223, 96, 0.15);
+    --shadow-diamond: 0 0 50px rgba(255, 193, 71, 0.7), 0 0 100px rgba(255, 193, 71, 0.4), 0 0 150px rgba(255, 193, 71, 0.2);
+    --shadow-luxury-card: 0 40px 80px -20px rgba(0, 0, 0, 0.4), 0 25px 50px -12px rgba(255, 215, 0, 0.3), 0 12px 24px -6px rgba(255, 215, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    --shadow-premium-button: 0 20px 40px 0 rgba(255, 215, 0, 0.6), 0 8px 20px 0 rgba(255, 215, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    --shadow-royal-hover: 0 50px 100px -25px rgba(255, 215, 0, 0.8), 0 30px 60px -15px rgba(255, 193, 71, 0.6), 0 15px 30px -8px rgba(255, 215, 0, 0.4);
+    --shadow-platinum: 0 60px 120px -30px rgba(255, 215, 0, 0.6), 0 40px 80px -20px rgba(255, 193, 71, 0.4), 0 20px 40px -10px rgba(218, 165, 32, 0.3);
+    --shadow-crystal-glass: 0 50px 100px -25px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 215, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    --shadow-luxury-text: 0 8px 16px rgba(255, 215, 0, 0.5), 0 4px 8px rgba(255, 215, 0, 0.3);
+    --shadow-royal-inset: inset 0 2px 0 rgba(255, 255, 255, 0.15), inset 0 -2px 0 rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 215, 0, 0.1);
 
     /* Ultra-smooth transitions for luxury experience */
     --transition-ultra: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
@@ -134,10 +134,10 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    line-height: 1.75;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
     /* Ultra-premium performance optimizations */
     font-display: swap;
     -webkit-font-smoothing: antialiased;
@@ -151,11 +151,11 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     font-weight: 600;
-    letter-spacing: -0.03em;
-    line-height: 1.15;
-    text-shadow: var(--shadow-text);
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-shadow: var(--shadow-luxury-text);
   }
 
   html {
@@ -168,59 +168,67 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  /* Premium luxury utility classes using sophisticated design system */
-  .text-gradient {
+  /* Ultra-luxury premium utility classes using crystalline design system */
+  .text-gradient-luxury {
     background: var(--gradient-primary);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 300% 300%;
-    animation: gradientShift 4s ease-in-out infinite;
+    background-size: 400% 400%;
+    animation: crystal-shimmer 3s ease-in-out infinite;
+    font-family: 'Cinzel', serif;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.1em;
+    text-shadow: var(--shadow-luxury-text);
   }
 
-  .text-gradient-accent {
+  .text-gradient-royal {
     background: var(--gradient-accent);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
   }
 
-  .hero-bg {
+  .hero-bg-luxury {
     background: var(--gradient-hero);
+    backdrop-filter: blur(40px) saturate(180%) brightness(120%);
   }
 
-  .mesh-bg {
+  .mesh-bg-premium {
     background: var(--gradient-mesh);
+    backdrop-filter: blur(30px) saturate(150%);
   }
 
-  .card-gradient {
+  .card-gradient-crystal {
     background: var(--gradient-card);
+    backdrop-filter: blur(25px) saturate(200%) brightness(110%);
   }
 
-  .shadow-golden {
-    box-shadow: var(--shadow-golden);
+  .shadow-crystal {
+    box-shadow: var(--shadow-crystal);
   }
 
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .shadow-velvet {
+    box-shadow: var(--shadow-velvet);
   }
 
-  .shadow-accent {
-    box-shadow: var(--shadow-accent);
+  .shadow-diamond {
+    box-shadow: var(--shadow-diamond);
   }
 
-  .shadow-card {
-    box-shadow: var(--shadow-card);
+  .shadow-luxury-card {
+    box-shadow: var(--shadow-luxury-card);
   }
 
-  .shadow-button {
-    box-shadow: var(--shadow-button);
+  .shadow-premium-button {
+    box-shadow: var(--shadow-premium-button);
   }
 
-  .shadow-hover {
-    box-shadow: var(--shadow-hover);
+  .shadow-royal-hover {
+    box-shadow: var(--shadow-royal-hover);
   }
 
   .transition-smooth {
@@ -251,35 +259,72 @@ All colors MUST be HSL.
     transform: translateZ(0);
   }
 
-  .premium-card {
+  .crystal-card {
     background: var(--gradient-card);
-    border: 1px solid hsl(var(--border) / 0.4);
-    box-shadow: var(--shadow-premium);
+    border: 2px solid hsl(var(--border) / 0.3);
+    box-shadow: var(--shadow-luxury-card);
     transition: var(--transition-premium);
+    backdrop-filter: blur(40px) saturate(180%) brightness(110%);
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
     /* Performance optimization */
     will-change: transform, box-shadow;
     transform: translateZ(0);
-    backdrop-filter: blur(20px);
   }
 
-  .premium-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: var(--shadow-hover);
-    border-color: hsl(var(--primary) / 0.25);
+  .crystal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.1), transparent, hsl(var(--accent) / 0.05));
+    border-radius: inherit;
+    pointer-events: none;
   }
 
-  .luxury-button {
+  .crystal-card:hover {
+    transform: translateY(-12px) scale(1.03) rotateX(5deg);
+    box-shadow: var(--shadow-royal-hover);
+    border-color: hsl(var(--primary) / 0.4);
+  }
+
+  .royal-button {
     background: var(--gradient-primary);
-    border: 1px solid hsl(var(--primary) / 0.3);
-    box-shadow: var(--shadow-button);
-    transition: var(--transition-glow);
-    backdrop-filter: blur(10px);
+    border: 2px solid hsl(var(--primary) / 0.4);
+    box-shadow: var(--shadow-premium-button);
+    transition: var(--transition-premium);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
   }
 
-  .luxury-button:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
-    border-color: hsl(var(--primary) / 0.5);
+  .royal-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+  }
+
+  .royal-button:hover::before {
+    left: 100%;
+  }
+
+  .royal-button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: var(--shadow-royal-hover);
+    border-color: hsl(var(--primary) / 0.7);
   }
 
   .border-glow {
