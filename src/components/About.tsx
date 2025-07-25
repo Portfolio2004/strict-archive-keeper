@@ -182,7 +182,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-5xl mx-auto">
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300"
+                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300 golden-glow-hover"
               >
                 <div className="text-4xl font-bold text-primary mb-3">2022</div>
                 <div className="text-base text-muted-foreground font-medium">Started Linux Journey</div>
@@ -190,7 +190,7 @@ const About = () => {
               <div className="hidden md:block w-12 h-0.5 bg-gradient-to-r from-primary via-accent to-primary"></div>
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-accent/30 transition-all duration-300"
+                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-accent/30 transition-all duration-300 golden-glow-hover"
               >
                 <div className="text-4xl font-bold text-accent mb-3">2023-2024</div>
                 <div className="text-base text-muted-foreground font-medium">Cloud & DevOps Focus</div>
@@ -198,7 +198,7 @@ const About = () => {
               <div className="hidden md:block w-12 h-0.5 bg-gradient-to-r from-accent via-primary to-accent"></div>
               <motion.div
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300"
+                className="flex-1 p-8 rounded-2xl bg-gradient-to-br from-card/60 to-card/30 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300 golden-glow-hover"
               >
                 <Award className="h-8 w-8 text-primary mx-auto mb-3" />
                 <div className="text-lg font-bold text-primary mb-2">Achievements</div>

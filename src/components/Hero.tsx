@@ -158,21 +158,21 @@ const Hero = () => {
             >
               <motion.div
                 whileHover={{ scale: 1.08, y: -8 }}
-                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group"
+                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group golden-glow-hover"
               >
                 <div className="text-3xl font-serif font-bold text-gradient mb-2">1+</div>
                 <div className="text-sm text-muted-foreground font-sans tracking-wide">Years Experience</div>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.08, y: -8 }}
-                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group"
+                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group golden-glow-hover"
               >
                 <div className="text-3xl font-serif font-bold text-gradient-accent mb-2">20+</div>
                 <div className="text-sm text-muted-foreground font-sans tracking-wide">Technologies</div>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.08, y: -8 }}
-                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group"
+                className="text-center p-6 rounded-xl glass-effect transition-all duration-500 hover:shadow-premium group golden-glow-hover"
               >
                 <div className="text-3xl font-serif font-bold text-gradient mb-2">100%</div>
                 <div className="text-sm text-muted-foreground font-sans tracking-wide">Automation Focus</div>
@@ -194,7 +194,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-full bg-card/50 border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-300 hover:shadow-glow"
+                className="p-3 rounded-full bg-card/50 border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-300 hover:shadow-glow premium-glow-hover"
               >
                 <Github className="h-6 w-6" />
               </motion.a>
@@ -204,7 +204,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-full bg-card/50 border border-border hover:border-accent/50 text-foreground hover:text-accent transition-all duration-300 hover:shadow-accent"
+                className="p-3 rounded-full bg-card/50 border border-border hover:border-accent/50 text-foreground hover:text-accent transition-all duration-300 hover:shadow-accent premium-glow-hover"
               >
                 <Linkedin className="h-6 w-6" />
               </motion.a>
@@ -212,7 +212,7 @@ const Hero = () => {
                 href="mailto:djprakul2004@gmail.com"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
-                className="p-3 rounded-full bg-card/50 border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-300 hover:shadow-glow"
+                className="p-3 rounded-full bg-card/50 border border-border hover:border-primary/50 text-foreground hover:text-primary transition-all duration-300 hover:shadow-glow premium-glow-hover"
               >
                 <Mail className="h-6 w-6" />
               </motion.a>
