@@ -110,7 +110,7 @@ const Navigation = () => {
                   ease: [0.25, 0.46, 0.45, 0.94]
                 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-all duration-500 font-medium relative group px-3 py-2 rounded-lg"
+                className="text-muted-foreground hover:text-primary transition-all duration-500 font-medium relative group px-3 py-2 rounded-lg glow-nav"
                 whileHover={{
                   y: -2,
                   scale: 1.05,
@@ -152,7 +152,7 @@ const Navigation = () => {
                 transition: { duration: 0.3 }
               }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent hover:from-primary-bright hover:to-accent-bright text-primary-foreground font-medium transition-all duration-500 shadow-golden relative overflow-hidden group"
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent hover:from-primary-bright hover:to-accent-bright text-primary-foreground font-medium transition-all duration-500 shadow-golden relative overflow-hidden group glow-button"
             >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100"
@@ -178,9 +178,9 @@ const Navigation = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition-all duration-300"
+            className="md:hidden p-2 rounded-lg bg-card/50 border border-border hover:border-primary/50 transition-all duration-300 glow-button"
           >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isOpen ? <X className="h-5 w-5 glow-icon" /> : <Menu className="h-5 w-5 glow-icon" />}
           </motion.button>
         </div>
 
@@ -202,7 +202,7 @@ const Navigation = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                     onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left px-4 py-2 text-foreground/80 hover:text-primary hover:bg-card/50 rounded-lg transition-all duration-300"
+                    className="block w-full text-left px-4 py-2 text-foreground/80 hover:text-primary hover:bg-card/50 rounded-lg transition-all duration-300 glow-nav"
                   >
                     {item.label}
                   </motion.button>
@@ -217,9 +217,9 @@ const Navigation = () => {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 }}
-                    className="p-2 rounded-full bg-card/50 border border-border hover:border-primary/50 transition-all duration-300"
+                    className="p-2 rounded-full bg-card/50 border border-border hover:border-primary/50 transition-all duration-300 glow-button"
                   >
-                    <Github className="h-4 w-4" />
+                    <Github className="h-4 w-4 glow-icon" />
                   </motion.a>
                   <motion.a
                     href="https://linkedin.com/in/iamdheerajjain"
@@ -228,18 +228,18 @@ const Navigation = () => {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.6 }}
-                    className="p-2 rounded-full bg-card/50 border border-border hover:border-accent/50 transition-all duration-300"
+                    className="p-2 rounded-full bg-card/50 border border-border hover:border-accent/50 transition-all duration-300 glow-button"
                   >
-                    <Linkedin className="h-4 w-4" />
+                    <Linkedin className="h-4 w-4 glow-icon" />
                   </motion.a>
                   <motion.button
                     onClick={copyEmailToClipboard}
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.7 }}
-                    className="p-2 rounded-full bg-card/50 border border-border hover:border-primary/50 transition-all duration-300"
+                    className="p-2 rounded-full bg-card/50 border border-border hover:border-primary/50 transition-all duration-300 glow-button"
                   >
-                    <Mail className="h-4 w-4" />
+                    <Mail className="h-4 w-4 glow-icon" />
                   </motion.button>
                 </div>
               </div>
