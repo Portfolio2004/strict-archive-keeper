@@ -196,7 +196,7 @@ const Hero = () => {
                     // Download resume logic
                     const link = document.createElement("a");
                     link.href = "/resume.pdf"; // You'll need to add your resume PDF to public folder
-                    link.download = "Dheeraj_Jain_B_Resume.pdf";
+                    link.download = "Dheeraj_Jain_Resume.pdf";
                     link.click();
                   }}
                   size="lg"
