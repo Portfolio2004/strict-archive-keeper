@@ -315,14 +315,14 @@ const Hero = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`relative z-10 p-3 rounded-full bg-card/50 border border-border ${social.hoverColor} text-foreground transition-all duration-300 hover:shadow-glow golden-glow-hover backdrop-blur-lg block`}
+                      className={`relative z-10 p-3 rounded-full bg-card/50 border border-border ${social.hoverColor} text-foreground transition-all duration-300 hover:shadow-glow golden-glow-hover backdrop-blur-lg block gold-glow-social`}
                     >
                       <social.icon className="h-6 w-6" />
                     </motion.a>
                   ) : (
                     <button
                       onClick={social.action}
-                      className={`relative z-10 p-3 rounded-full bg-card/50 border border-border ${social.hoverColor} text-foreground transition-all duration-300 hover:shadow-glow golden-glow-hover backdrop-blur-lg block`}
+                      className={`relative z-10 p-3 rounded-full bg-card/50 border border-border ${social.hoverColor} text-foreground transition-all duration-300 hover:shadow-glow golden-glow-hover backdrop-blur-lg block gold-glow-social`}
                     >
                       <social.icon className="h-6 w-6" />
                     </button>
