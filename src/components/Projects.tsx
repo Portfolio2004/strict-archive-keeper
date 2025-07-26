@@ -1,70 +1,153 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, Server, Cloud, Container, Monitor } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { ScrollReveal, StaggerContainer } from '@/components/ScrollReveal';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  ExternalLink,
+  Github,
+  Server,
+  Cloud,
+  Container,
+  Monitor,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import { ScrollReveal, StaggerContainer } from "@/components/ScrollReveal";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Cloud Infrastructure Automation",
-      description: "Automated cloud infrastructure deployment using Terraform and Ansible, reducing deployment time by 80% and ensuring consistent environments across development, staging, and production.",
-      technologies: ["Terraform", "Ansible", "Azure", "Docker", "Kubernetes"],
+      title: "NovaDB",
+      link: "https://github.com/iamdheerajjain/NovaDB",
+      description:
+        "Developing a lightweight, high-performance database management system using C++ and implemented core database operations with with efficient query handling. It is a Relational-Database and uses SQL.",
+      technologies: [
+        "C++",
+        "SQL",
+        "STL",
+        "OOP",
+        "Data Management",
+        "Data Structures",
+      ],
       icon: <Cloud className="h-8 w-8" />,
       category: "Infrastructure",
-      highlights: ["80% faster deployments", "Zero-downtime updates", "Multi-environment consistency"],
-      gradient: "from-primary to-accent"
+      highlights: [
+        "Centralized Monitoring",
+        "Custom Alerts to Prevent Downtime",
+        "Zero Cost, Fully Open Source",
+      ],
+      gradient: "from-primary to-accent",
     },
     {
-      title: "Kubernetes Monitoring Stack",
-      description: "Comprehensive monitoring solution using Prometheus, Grafana, and Loki for real-time observability across Kubernetes clusters with custom alerting and automated incident response.",
-      technologies: ["Prometheus", "Grafana", "Loki", "Kubernetes", "Helm"],
+      title: "LogMetrix",
+      link: "https://github.com/iamdheerajjain/LogMetrix",
+      description:
+        "CA fully open-source project helps track system performance and activities in real time through visual dashboards. It alerts users when something unusual happens, making system monitoring simple and effective.",
+      technologies: [
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Promtail",
+        "Node Exporter",
+      ],
       icon: <Monitor className="h-8 w-8" />,
-      category: "Monitoring",
-      highlights: ["Real-time metrics", "Custom dashboards", "Automated alerting"],
-      gradient: "from-accent to-primary"
-    },
-    {
-      title: "CI/CD Pipeline Optimization",
-      description: "Redesigned and optimized CI/CD pipelines using Jenkins and GitLab CI, implementing automated testing, security scanning, and deployment strategies for faster, safer releases.",
-      technologies: ["Jenkins", "GitLab CI", "Docker", "SonarQube", "Nexus"],
-      icon: <Server className="h-8 w-8" />,
       category: "DevOps",
-      highlights: ["50% faster builds", "Automated security scans", "Quality gates"],
-      gradient: "from-primary to-accent"
+      highlights: [
+        "Centralized Monitoring",
+        "Custom Alerts to Prevent Downtime",
+        "Zero Cost, Fully Open Source",
+      ],
+      gradient: "from-accent to-primary",
     },
     {
-      title: "Container Orchestration Platform",
-      description: "Built a scalable container orchestration platform with automatic scaling, load balancing, and health monitoring for microservices architecture supporting 1000+ concurrent users.",
-      technologies: ["Kubernetes", "Docker", "Istio", "Prometheus", "Redis"],
+      title: "FluxShell",
+      link: "https://github.com/iamdheerajjain/FluxShell",
+      description:
+        "A lightweight Linux shell clone written in C++. This custom shell (newbash$) provides basic shell functionalities like file navigation, permission changes, process management, and more—built entirely using system-level C++ APIs.",
+      technologies: [
+        "C++",
+        "Linux",
+        "Shell-Scripting",
+        "System Calls",
+        "Algorithms",
+      ],
       icon: <Container className="h-8 w-8" />,
-      category: "Platform",
-      highlights: ["Auto-scaling", "Load balancing", "Health monitoring"],
-      gradient: "from-accent to-primary"
+      category: "Systems Programming",
+      highlights: [
+        "Basic Shell Environment",
+        "Built-in Command Support",
+        "Error Handling & Safety",
+      ],
+      gradient: "from-accent to-primary",
     },
     {
-      title: "Multi-Cloud Disaster Recovery",
-      description: "Implemented comprehensive disaster recovery solution across multiple cloud providers with automated failover, data replication, and recovery testing procedures.",
-      technologies: ["Azure", "AWS", "Terraform", "Ansible", "Backup Tools"],
-      icon: <Cloud className="h-8 w-8" />,
-      category: "Infrastructure",
-      highlights: ["99.9% uptime", "Automated failover", "Cross-cloud backup"],
-      gradient: "from-primary to-accent"
-    },
-    {
-      title: "Infrastructure as Code Framework",
-      description: "Developed a comprehensive IaC framework with reusable modules, automated testing, and validation pipelines for consistent infrastructure provisioning across teams.",
-      technologies: ["Terraform", "Terratest", "Go", "GitHub Actions", "Azure DevOps"],
+      title: "C-RAD",
+      link: "https://github.com/iamdheerajjain/C_RAD",
+      description:
+        "This system automatically detects accidents from video footage and determines whether an incident has occurred. Upon detection, it identifies the user's location using IP-based geolocation. It then sends an alert message with the location details to a predefined emergency contact.",
+      technologies: [
+        "Python",
+        "Twilio",
+        "Computer Vision",
+        "Geocoder",
+        "Geopy",
+      ],
       icon: <Server className="h-8 w-8" />,
-      category: "Automation",
-      highlights: ["Reusable modules", "Automated testing", "Team consistency"],
-      gradient: "from-accent to-primary"
-    }
+      category: "Deep Learning",
+      highlights: [
+        "50% Faster Emergency Response ",
+        "90% Accurate Location Tracking",
+        "Hands-Free Accident Detection",
+      ],
+      gradient: "from-primary to-accent",
+    },
+    {
+      title: "AquaSense",
+      link: "https://github.com/iamdheerajjain/AquaSense",
+      description:
+        "This project predicts whether a given water sample is safe for drinking based on its physical and chemical properties. It analyzes factors like pH, turbidity, and contamination levels to determine potability. The system helps in early detection of unsafe water.",
+      technologies: [
+        "Python",
+        "CLI-Execution",
+        "Scikit-learn",
+        "Pandas",
+        "Numpy",
+      ],
+      icon: <Cloud className="h-8 w-8" />,
+      category: "Machine Learning",
+      highlights: [
+        "Model Explainability via Feature Attribution",
+        "Deployment-Ready Architecture",
+        "Predictive Modeling",
+      ],
+      gradient: "from-primary to-accent",
+    },
+    {
+      title: "PixelPalette",
+      link: "https://github.com/iamdheerajjain/PixelPalette",
+      description:
+        "This project analyzes an image to identify its most prominent colors.It then generates a clean visual representation showing these dominant colors in proportion.The result helps in understanding the color composition and aesthetic of any image at a glance.",
+      technologies: [
+        "Python",
+        "OpenCV",
+        "Scikit-learn",
+        "Numpy",
+        "Azure DevOps",
+      ],
+      icon: <Server className="h-8 w-8" />,
+      category: "Machine Learning",
+      highlights: [
+        "Instant Visual Color Insights",
+        "Proportional Palette Visualization",
+        "Offline and Fast Processing",
+      ],
+      gradient: "from-accent to-primary",
+    },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-secondary/30 relative overflow-hidden">
+    <section
+      id="projects"
+      className="py-20 bg-secondary/30 relative overflow-hidden"
+    >
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -72,7 +155,7 @@ const Projects = () => {
           animate={{
             scale: [1, 1.3, 1],
             opacity: [0.2, 0.4, 0.2],
-            rotate: [0, 180, 360]
+            rotate: [0, 180, 360],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         />
@@ -81,7 +164,7 @@ const Projects = () => {
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.1, 0.3, 0.1],
-            rotate: [360, 180, 0]
+            rotate: [360, 180, 0],
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
         />
@@ -90,18 +173,18 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <ScrollReveal direction="up" delay={0.2}>
           <div className="text-center mb-16">
-            <motion.div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6"
-            >
+            <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <Server className="h-4 w-4 text-primary" />
-              <span className="text-primary font-medium">Featured Projects</span>
+              <span className="text-primary font-medium">
+                Featured Projects
+              </span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-gradient">Solutions & Innovations</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A showcase of infrastructure projects that demonstrate expertise in cloud architecture,
-              automation, monitoring, and scalable system design.
+              Systems built with intention — focused on stability, efficiency
+              and real-world use
             </p>
           </div>
         </ScrollReveal>
@@ -117,7 +200,7 @@ const Projects = () => {
                 transition={{
                   delay: index * 0.15,
                   duration: 0.9,
-                  ease: [0.25, 0.46, 0.45, 0.94]
+                  ease: [0.25, 0.46, 0.45, 0.94],
                 }}
                 whileHover={{
                   y: -15,
@@ -125,7 +208,7 @@ const Projects = () => {
                   rotateY: 3,
                   rotateX: 2,
                   boxShadow: "var(--shadow-hover)",
-                  transition: { duration: 0.5 }
+                  transition: { duration: 0.5 },
                 }}
                 whileTap={{ scale: 0.98 }}
                 className="group perspective-1000"
@@ -145,17 +228,22 @@ const Projects = () => {
                         duration: 2,
                         repeat: Infinity,
                         repeatDelay: 3,
-                        ease: "easeInOut"
+                        ease: "easeInOut",
                       }}
                     />
                   </motion.div>
 
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between mb-4">
-                      <div className={`p-3 rounded-lg bg-gradient-to-br ${project.gradient} text-white shadow-lg`}>
+                      <div
+                        className={`p-3 rounded-lg bg-gradient-to-br ${project.gradient} text-white shadow-lg`}
+                      >
                         {project.icon}
                       </div>
-                      <Badge variant="secondary" className="bg-secondary/50 border border-border/50">
+                      <Badge
+                        variant="secondary"
+                        className="bg-secondary/50 border border-border/50"
+                      >
                         {project.category}
                       </Badge>
                     </div>
@@ -171,12 +259,19 @@ const Projects = () => {
 
                     {/* Project Highlights */}
                     <div className="space-y-2">
-                      <h4 className="text-sm font-semibold text-foreground">Key Achievements:</h4>
+                      <h4 className="text-sm font-semibold text-foreground">
+                        Key Achievements:
+                      </h4>
                       <div className="space-y-1">
                         {project.highlights.map((highlight, highlightIndex) => (
-                          <div key={highlightIndex} className="flex items-center gap-2 text-xs">
+                          <div
+                            key={highlightIndex}
+                            className="flex items-center gap-2 text-xs"
+                          >
                             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                            <span className="text-muted-foreground">{highlight}</span>
+                            <span className="text-muted-foreground">
+                              {highlight}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -184,7 +279,9 @@ const Projects = () => {
 
                     {/* Technologies */}
                     <div className="space-y-2">
-                      <h4 className="text-sm font-semibold text-foreground">Technologies:</h4>
+                      <h4 className="text-sm font-semibold text-foreground">
+                        Technologies:
+                      </h4>
                       <div className="flex flex-wrap gap-1.5">
                         {project.technologies.map((tech, techIndex) => (
                           <motion.div
@@ -211,7 +308,7 @@ const Projects = () => {
                         size="sm"
                         variant="outline"
                         className="flex-1 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
-                        onClick={() => window.open('https://github.com/iamdheerajjain', '_blank')}
+                        onClick={() => window.open(project.link, "_blank")}
                       >
                         <Github className="h-3 w-3 mr-1" />
                         Details
@@ -228,15 +325,18 @@ const Projects = () => {
         <ScrollReveal direction="up" delay={0.6}>
           <div className="text-center mt-16">
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl border border-border/50 p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold mb-4 text-gradient">View All Projects on GitHub</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gradient">
+                Take a peek at my work
+              </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Explore my complete portfolio of infrastructure projects, automation scripts,
-                and DevOps solutions. All code is open source and available for collaboration.
+                Swing by my GitHub to see what I’ve been building lately
               </p>
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-button hover:shadow-hover transition-all duration-300 glow-effect"
-                onClick={() => window.open('https://github.com/iamdheerajjain', '_blank')}
+                onClick={() =>
+                  window.open("https://github.com/iamdheerajjain", "_blank")
+                }
               >
                 View All Projects
                 <Github className="ml-2 h-4 w-4" />
