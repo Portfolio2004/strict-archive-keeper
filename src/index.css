@@ -381,20 +381,6 @@ All colors MUST be HSL.
   .icon-glow-large {
     @apply glow-icon w-8 h-8;
   }
-
-  /* Gold glow effect for social icons */
-  .gold-glow-social {
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  .gold-glow-social:hover {
-    box-shadow: 
-      0 0 15px rgba(213, 179, 82, 0.8),
-      0 0 30px rgba(213, 179, 82, 0.6),
-      0 0 45px rgba(213, 179, 82, 0.4),
-      0 0 60px rgba(213, 179, 82, 0.2);
-    transform: scale(1.1) translateY(-2px);
-  }
 }
 
 @layer utilities {
